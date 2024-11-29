@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="author" content="Joel Toullot">
+            <meta name="description" content="Web per TA04 MDS">
+            <meta name="viewport" content="widht=device-widht, inicital-scale=1.0">
+            <link rel="stylesheet" href="./CSS/styles.css"/>
+            <script src="./JS/script.js" defer></script>
+            <title>Home</title>
+        </head>
+        <header class="class-header">
+            <div class="greeting">
+                <p class="headertittle">Welcome to my portfolio!</p>
+                <p class="headertittle1">Joel Toullot Salcedo</p>
+                <p class="headertittle2">SysAdmin | Network Manager | Future Cybersecurity Specialist</p>
+                <p class="projectlist-link"><a href="./projectlist.html" id="animatedLink">Project List</a></p>
+                <img src="imgs/PFP.jpg" class="PFP">
+            </div>
+        </header>
+        <body class="body-index">
+            <div class="main-container">
+                <div class="content">
+                    <div class="section">
+                        <h2 class="desc-tittle">Get to know me!</h2>
+                        <h2 class="desc-tittle1">SysAdmin | Network Manager | Future Cybersecurity Specialist</h2>
+                        <p>I am a enthusiastic SysAdmin and Network Manager who constantly wants to learn new things</p>
+                        <br>
+                        <p>You can know more about me in my CV below</p>
+                        <a href="./Miscellany/Joel_Toullot_CV.pdf" download="Joel_Toullot_CV" class="download-btn">Download My CV</a>
+                    </div>
+                    <div class="section">
+                        <h2 class="desc-tittle">My Skills</h2>
+                        <h2 class="desc-tittle1">Windows & Linux</h3>
+                        <p>I have skills in the use of Windows operating systems and Linux operating systems, specially with Ubuntu</p>
+                        <h2 class="desc-tittle1">HackTheBox</h3>
+                        <p>I've been using HackTheBox for the past months and still trying to upgrade my level of cybersecurity skills!</p>
+                        <h2 class="desc-tittle1">Net tools</h3>
+                        <p>Knowledge of the use of various net tools like Packet Tracer with the objective to create and design new and better network shcemes and to know how to troubleshoot network problems</p>
+                    </div>
+                    <div class="section">
+                        <h2 class="desc-tittle">Personal Info</h2>
+                        <h4>Email:</h4>
+                        <p>joel.toullot.7e6@itb.cat</p>
+                        <h4>Phone number:</h4>
+                        <p>+34 937 070 020</p>
+                        <h4>Address where you can find me:</h4>
+                        <p>c/ Aiguablava 121, 08033 Barcelona</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h2 class="form-title">Get in Contact with Me!</h2>
+                    <div class="form-container">
+                        <form action="index.html">
+                            <fieldset>
+                                <div class="form-name">
+                                    <label for="n">Name</label>
+                                    <input type="text" style="margin-left: 0px;" id="n" name="prova" maxlength="25" placeholder="John (min 2 characters max 25)" pattern="[A-Za-z]{2,}" title="Only letters are allowed" required />
+                                </div>
+                                <div class="form-phone">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" style="margin-left: 0px;" id="phone" name="phone" placeholder="+34 123456789" pattern="[+]([1-9]|[0-9][0-9]|[0-9][0-9][0-9]) [0-9]{3}[0-9]{3}[0-9]{3}" required>
+                                </div>
+                                <div class="form-email">
+                                    <label for="email">Mail</label>
+                                    <input type="text" style="margin-left: 0px;" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="john@gmail.com" title="Invalid email address" required/>
+                                </div>
+                                <div class="form-submit">
+                                    <br>
+                                    <button type="submit" id="submitButton" disabled style="background-color: red; color: white;">Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="catalog-title-main">My most important projects!</h2>
+            <h3 class="catalog-subtitle-main">Take a good look at them you won't regret it! 😼😼😼😼</h3> 
+            <main class="important-projects-catalog">
+                <div class="latest-project-card">
+                    <img src="./imgs/SmartWaste.png" alt="Project 1 Thumbnail" class="project-image">
+                    <div class="project-hover">
+                        <h2>SmartWaste</h2>
+                        <p>SmartWaste is a more complex IT/AI project that I developed with some of my peers focusing in recycling using an AI trained by ourselves</p>
+                        <p>See more about it clicking the arrow!</p>
+                        <button class="arrow-button" onclick="window.location.href='./project2.html'">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+                <div class="latest-project-card">
+                    <img src="./imgs/WarePressIT_LOGO.png" alt="Project 2 Thumbnail" class="project-image">
+                    <div class="project-hover">
+                        <h2>WarePressIT</h2>
+                        <p>WarePressIT is a simple project which consisted in the production of an IT company</p>
+                        <p>See more about it clicking the arrow!</p>
+                        <button class="arrow-button" onclick="window.location.href='project1.html'">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </body>
+    </html>
